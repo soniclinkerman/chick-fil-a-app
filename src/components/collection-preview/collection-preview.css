@@ -1,0 +1,22 @@
+.collection-preview{
+    display: grid;
+    padding: 2em;
+    gap: 2em;
+}
+
+.collection-preview-title{
+    text-align: center;
+    padding: 0 1.2em;
+}
+
+@media(min-width: 900px){
+    .collection-preview{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+
+    .collection-preview-title{
+        text-align: left;
+    }
+    
+}

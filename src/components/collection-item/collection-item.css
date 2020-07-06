@@ -1,0 +1,48 @@
+.collection-item{
+    border-radius: 5px;
+    width: 95%;
+    max-height: 370px;
+    margin: auto;
+    transition: 1s;
+    box-shadow: 2px 2px 2px 2px #dbdbdb;
+    padding: 0.5em;
+    margin-bottom: 3em;
+}
+
+.collection-item:hover{
+    transform: scale(1.1);
+}
+
+.collection-item-img{
+    width: 40%;
+    margin: auto;
+}
+
+.collection-item-title{
+    font-size: 1.5rem;
+    color: #0079ca;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.collection-item-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-item-price{
+    font-weight: bold;
+}
+
+.collection-item-calorie{
+    opacity: 0.5;
+}
+
+@media(min-width: 900px){
+    .collection-item-footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
