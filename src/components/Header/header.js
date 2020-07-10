@@ -9,10 +9,15 @@ const Header = () => {
         <Link className="link" to="/">
             <Logo className="logo"/>
         </Link>
+        
 
         <div className="options">
         <Link className="option" to="/catering">
             MEALS
+        </Link>
+
+        <Link className="option" to="/sign-in">
+            Login
         </Link>
 
         </div>

@@ -13,6 +13,13 @@
     width: 50%;
 }
 
+.options{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .option{
     font-weight: bold;
     font-size: 1.2rem;
