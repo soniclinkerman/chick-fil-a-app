@@ -1,12 +1,10 @@
-.scrolling{
+.scrolling {
     overflow-y: scroll;
-    border-top: 1px solid #e0dbdb;
     height: 500px;
 }
 
-@media (min-width: 900px)
-{
-    .scrolling{
-    height: 670px;
+@media (min-width: 900px) {
+    .scrolling {
+        height: 670px;
     }
 }

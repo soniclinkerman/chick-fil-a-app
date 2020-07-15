@@ -1,57 +1,62 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import FormInput from "../../components/FormInput/form-input";
+import "./sign-in.css";
+class SignIn extends Component {
+  constructor() {
+    super();
+    this.state = {
+      email: "",
+      password: "",
+    };
+  }
 
-class SignIn extends Component{
-    constructor(){
-        super();
-        this.state = {
-            email: "",
-            password: ""
-        }
-    }
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
 
-    handleChange = (event) => {
-        const {name, value} = event.target;
-        this.setState({[name]: value});
-    }
-    
-    handleClick = (event) => {
-        event.preventDefault();
-        this.setState({email: "", password: ""})
-    }
+  handleClick = (event) => {
+    event.preventDefault();
+    this.setState({ email: "", password: "" });
+  };
 
-    render(){
-        return(
-            <div>
-                 <h1>Sign In</h1>
+  render() {
+    return (
+      <div className="sign-in-form">
+        <h1>SIGN IN</h1>
 
-                 <form>
-                    <label>Email</label>
-                     <FormInput
-                     name="email"
-                     type="email"
-                     value={this.state.email}
-                     handleChange={this.handleChange}
-                     />
+        <form>
+          <FormInput
+            placeholder="Email"
+            name="email"
+            label="Email"
+            type="email"
+            value={this.state.email}
+            handleChange={this.handleChange}
+          />
 
-                     <label>Password</label>
-                     <FormInput
-                     name="password"
-                     type="password"
-                     value={this.state.password}
-                     handleChange={this.handleChange}
-                     />
-                     
-                <input
-                type="submit"
-                onClick={this.handleClick}
-                />
-                </form>
-                <Link to="/sign-up">Don't have an account? Sign Up!</Link>
-            </div>
-        )
-    }
+          <FormInput
+            placeholder="Password"
+            name="password"
+            type="password"
+            value={this.state.password}
+            handleChange={this.handleChange}
+          />
+
+          <input
+            className="submit-button sign-in"
+            type="submit"
+            value="Sign In"
+            onClick={this.handleClick}
+          />
+        </form>
+        <Link className="account-link" to="/sign-up">
+          Don't have an account? Sign Up!
+        </Link>
+      </div>
+    );
+  }
 }
 
-export default SignIn
+export default SignIn;

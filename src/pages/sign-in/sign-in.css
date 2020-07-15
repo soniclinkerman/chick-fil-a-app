@@ -1,0 +1,42 @@
+.form-name {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 1em 2em
+}
+
+
+.submit-button {
+    padding: 0.5em 4em;
+    background: #ff3030;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background: #ff4f4f;
+}
+
+.sign-in {
+    margin: 2em 0;
+
+}
+
+.sign-in:focus {
+    outline: none;
+}
+
+.account-link:hover {
+    color: rgb(0, 112, 218);
+}
+
+.sign-in-form {
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
