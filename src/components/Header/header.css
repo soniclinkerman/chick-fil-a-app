@@ -26,7 +26,7 @@
     transition: color 0.5s ease;
     font-weight: bold;
     font-size: 1.2rem;
-    colro: black;
+    color: black;
 }
 
 .option:hover {
